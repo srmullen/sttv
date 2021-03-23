@@ -7,7 +7,7 @@ Installation
 ------------
 
 ```
-npx degit "srmullen/stts#main" my_app
+npx degit "srmullen/sttv#main" my_app
 cd my_app
 npm install
 ```
