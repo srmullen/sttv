@@ -5,6 +5,7 @@
     "dev": "vite",
     "build": "vite build",
     "test": "jest",
+    "test:watch": "jest --watchAll",
     "serve": "vite preview"
   },
   "devDependencies": {
