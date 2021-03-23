@@ -7,8 +7,8 @@
 <Tailwind />
 
 <main class="text-center p-4 mx-0">
-  <img src={logo} alt="Svelte Logo" class="w-64 h-64 inline-block" />
-  <h1 class="text-6xl text-[#ff3e00] uppercase font-thin leading-tight my-8 mx-auto max-w-xs sm:max-w-xs">Hello Vite!</h1>
+  <img width="100" height="100" src={logo} alt="Svelte Logo" class="inline-block" />
+  <h1 class="text-6xl uppercase font-thin leading-tight my-8 mx-auto max-w-xs sm:max-w-xs">Hello Vite!</h1>
 
   <Counter id="0" />
 
@@ -22,3 +22,13 @@
     the officially supported framework, also powered by Vite!
   </p>
 </main>
+
+<style>
+  :root {
+    --svelte-rgb: 255, 62, 0;
+  }
+
+  h1 {
+    color: rgb(var(--svelte-rgb));
+  }
+</style>

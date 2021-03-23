@@ -1,11 +1,34 @@
-# Svelte + TS + Vite
+STTV - Svelte / Typescript / Tailwind / Vite Template
+=====================================================
 
-This template should help get you started developing with Svelte and TypeScript in Vite.
+Get up and running with Svelte, Typescript, Tailwind and Vite. Also includes testing setup using Jest.
 
-## Recommended IDE Setup
+Installation
+------------
 
-[VSCode](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+```
+npx degit "srmullen/stts#main" my_app
+cd my_app
+npm install
+```
 
-## Need an official Svelte framework?
+Scripts
+-------
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+### Start a development server
+
+`npm run dev`
+
+### Run tests
+
+`npm run test`
+or
+`npm run test:watch`
+
+### Build the application
+
+`npm run build`
+
+### Serve the application
+
+`npm run serve`
