@@ -1,4 +1,4 @@
-<style global>
+<style global style lang="postcss">
   /* prgecss start ignore */
   @tailwind base;
   @tailwind components;
