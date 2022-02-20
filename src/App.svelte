@@ -1,10 +1,7 @@
 <script lang="ts">
   import logo from './assets/svelte.png'
   import Counter from './lib/Counter.svelte'
-  import Tailwind from './Tailwind.svelte';
 </script>
-
-<Tailwind />
 
 <main class="text-center p-4 mx-0">
   <img width="100" height="100" src={logo} alt="Svelte Logo" class="inline-block" />
@@ -13,7 +10,7 @@
   <Counter id="0" />
 
   <p class="max-w-xs sm:max-w-none my-4 mx-auto leading-5">
-    Visit <a class="text-red-500 hover:underline" href="https://svelte.dev">svelte.dev</a> to learn how to build Svelte
+    Visit <a class="text-red-600 hover:underline" href="https://svelte.dev">svelte.dev</a> to learn how to build Svelte
     apps.
   </p>
 
@@ -39,3 +36,7 @@
     color: rgb(var(--svelte-rgb));
   }
 </style>
+
+<!-- <style global style lang="postcss">
+  
+</style> -->
