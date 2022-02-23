@@ -1,0 +1,41 @@
+name: publish
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+
+jobs:
+  checks:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16.x'
+      - name: Test Build
+        run: |
+          npm i
+          npm run build
+  gh-release:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16.x'
+      - name: Install Dependencies
+        run: npm i
+      - name: Build Project
+        run: npm run build
+      - name: Prepare Project
+        run: touch public/.nojekyll
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+            branch: gh-pages
+            folder: dist
