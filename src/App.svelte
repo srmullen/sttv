@@ -27,7 +27,7 @@
   </div>
 </main>
 
-<style>
+<style lang="postcss">
   :root {
     --svelte-rgb: 255, 62, 0;
   }
@@ -36,7 +36,3 @@
     color: rgb(var(--svelte-rgb));
   }
 </style>
-
-<!-- <style global style lang="postcss">
-  
-</style> -->
