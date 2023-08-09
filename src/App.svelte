@@ -10,7 +10,7 @@
   <Counter id="0" />
 
   <p class="max-w-xs sm:max-w-none my-4 mx-auto leading-5">
-    Visit <a class="text-red-600 hover:underline" href="https://svelte.dev">svelte.dev</a> to learn how to build Svelte
+    Visit <a class="text-[#ff4500] hover:underline" href="https://svelte.dev">svelte.dev</a> to learn how to build Svelte
     apps.
   </p>
 
